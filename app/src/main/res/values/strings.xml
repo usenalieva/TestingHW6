@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestingCW6</string>
+    <string name="words">One Two</string>
+    <string name="number_a">number a</string>
+    <string name="number_b">number b</string>
+    <string name="result">Result</string>
+    <string name="add">+</string>
+    <string name="divide">/</string>
+    <string name="multiply">*</string>
+    <string name="subtract">-</string>
+    <string name="pow">^</string>
+    <string name="radical">√</string>
+</resources>
