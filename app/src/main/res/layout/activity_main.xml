@@ -10,57 +10,39 @@
 
     <EditText
         android:id="@+id/et_operator_one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/number_a"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp" />
+        style="@style/et_tv_style" />
 
     <EditText
         android:id="@+id/et_operator_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/number_b"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp" />
+        style="@style/et_tv_style"
+        android:hint="@string/number_b" />
 
     <TextView
         android:id="@+id/tv_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/result"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:visibility="visible" />
+        style="@style/et_tv_style"
+        android:hint="@string/result" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <Button
             android:id="@+id/btn_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:text="@string/add"
             app:layout_constraintEnd_toStartOf="@+id/btn_divide"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
+            style="@style/btn_style"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_divide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            style="@style/btn_style"
             android:text="@string/divide"
             app:layout_constraintEnd_toStartOf="@+id/btn_multiply"
             app:layout_constraintHorizontal_bias="0.5"
@@ -69,9 +51,7 @@
 
         <Button
             android:id="@+id/btn_multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            style="@style/btn_style"
             android:text="@string/multiply"
             app:layout_constraintEnd_toStartOf="@+id/btn_subtract"
             app:layout_constraintHorizontal_bias="0.5"
@@ -80,9 +60,7 @@
 
         <Button
             android:id="@+id/btn_subtract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            style="@style/btn_style"
             android:text="@string/subtract"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -92,23 +70,17 @@
 
         <Button
             android:id="@+id/btn_pow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
+            style="@style/btn_style"
             android:text="@string/pow"
-            app:layout_constraintStart_toEndOf="@id/btn_add"
+            app:layout_constraintEnd_toEndOf="@+id/btn_divide"
             app:layout_constraintTop_toBottomOf="@id/btn_divide" />
 
         <Button
             android:id="@+id/btn_sqrt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="48dp"
+            style="@style/btn_style"
             android:text="@string/radical"
-            app:layout_constraintEnd_toEndOf="@+id/btn_multiply"
-            app:layout_constraintTop_toTopOf="@+id/btn_multiply" />
+            app:layout_constraintStart_toStartOf="@+id/btn_multiply"
+            app:layout_constraintTop_toBottomOf="@+id/btn_multiply" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
